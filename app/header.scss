@@ -1,0 +1,130 @@
+@import "sass/vars";
+@import "sass/base";
+
+//First screen styles
+header{
+    background-color: #eeeeee;
+    height: 436px;
+}
+.header__logo{
+    display: inline-block;
+}
+.header__logo{
+    float: left;
+    padding:27px 158px 0 0;
+}
+.header__list{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    
+}
+.header__list_item{
+    display: inline-block;
+    float: left;
+    padding:55px 0 0 0;
+    a{
+        display: block;
+        font-size: 14px;
+        line-height: 30px;
+        color:#000;
+        text-decoration: none;
+        font-family: "RobotoRegular" sans-serif;
+        padding: 0 22px;
+        text-transform:uppercase;
+        font-weight: bold;
+        &:hover{
+            color: #fb565a;
+        }
+        &:active{
+            color:#cbcbcb;
+        }
+        
+    }
+}
+.header__basket{
+    display: inline-block;
+    float: right;
+    padding: 55px 0 0 0;
+    a{
+        font-size: 14px;
+        line-height: 30px;
+        color:#000;
+        text-decoration: none;
+        font-family: "RobotoRegular" sans-serif;
+        text-transform:uppercase;
+        font-weight: bold;  
+        display: block;
+        padding-left: 35px;
+        background: url("img/basket.png") no-repeat  9px 6px;
+        &:hover{
+            background-position: 8px -146px;
+            color: #fb565a;
+        }
+        &:active{
+            background-position: 9px -299px;
+            color:#cbcbcb;
+        }
+        &:visited{
+            text-decoration: none;
+        }
+    }  
+}
+.header__top{
+    margin-bottom: 50px;
+}
+.header__slider_left{
+    float: left;
+}
+.header__slider_zag{
+    font-size: 36px;
+    line-height: 36px;
+    margin: 25px 0;
+    padding: 0;
+    font-weight: bold;
+}
+.header__slider_text{
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: bold;
+    margin-bottom: 33px;
+}
+.header__slider_right{
+    width: 340px;
+    float: right;
+    
+}
+.header_btn{
+    position: relative;
+    
+     &::after{
+        position: absolute;
+        content: "";
+        width: 50px;
+        height: 10px;
+        background: url(img/slider-icon.png) no-repeat;
+        bottom: 13px;
+        left: 433px;
+    }
+}
+.header_btn_main{
+    color: #fff;
+    background-color: $red;
+    width: 240px;
+    height: 40px;
+    padding: 14px 70px;
+    border-radius: 5px;
+    text-decoration: none;
+    position: relative;
+    
+    &:hover{
+        text-decoration: none;
+        background-color: #d6494d;
+        color:#fff;
+    }
+    &:active{
+        text-decoration: none;
+        background-color: #b63538;
+        color:#fff;
+    }
+}
