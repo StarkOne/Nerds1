@@ -94,23 +94,13 @@ header{
     float: right;
     
 }
-.header_btn{
-    position: relative;
-    
-     &::after{
-        position: absolute;
-        content: "";
-        width: 50px;
-        height: 10px;
-        background: url(img/slider-icon.png) no-repeat;
-        bottom: 13px;
-        left: 433px;
-    }
-}
+
 .header_btn_main{
     color: #fff;
     background-color: $red;
     width: 240px;
+    position: relative;
+    z-index: 100000;
     height: 40px;
     padding: 14px 70px;
     border-radius: 5px;
@@ -127,4 +117,43 @@ header{
         background-color: #b63538;
         color:#fff;
     }
+}
+.slider{
+    .bx-wrapper{
+        .bx-pager.bx-default-pager{
+                width: 100px;
+                position: relative;
+                top: -119px;
+                left: 401px;
+            
+            .bx-pager-link{
+                background: #fff;
+                width: 13px;
+                height: 13px;
+                border: 5px solid transparent;
+                
+                &.active{
+                    border: 5px solid #fff;
+                    background: #000;
+                }
+            }
+        }
+        
+        .bx-viewport{
+            min-height: 300px;
+            box-shadow: none;
+            border: none;
+            background: transparent;
+        }
+    }
+}
+.header__slider_left{
+min-height: 300px;
+width: 510px;
+}
+.slidr__img1{
+    float: right;
+}
+.img3{
+    width: 314px;
 }
