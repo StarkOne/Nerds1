@@ -5,6 +5,7 @@
 header{
     background-color: #eeeeee;
     height: 436px;
+    overflow: hidden;
 }
 .header__logo{
     display: inline-block;
@@ -150,6 +151,7 @@ header{
 .header__slider_left{
 min-height: 300px;
 width: 510px;
+margin-left: 8px;
 }
 .slidr__img1{
     float: right;
